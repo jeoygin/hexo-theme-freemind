@@ -110,7 +110,9 @@
 	<div class="mypage">		
 	    <p>The freemind theme offers several new tag plugins, so as to fully take advantages of Bootstrap.</p>
 <p>To use these tag plugins, you need to install <a href="https://github.com/wzpan/hexo-tag-bootstrap" target="_blank" rel="external">hexo-tag-bootstrap</a> first. In your blog root folder, execute the following command:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-tag-bootstrap <span class="comment">--save</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-tag-bootstrap <span class="comment">--save</span></span></span>
+</pre></td></tr></table></figure>
 
 <p>Then you can use these tag plugins in your blog, as easily as you normally do using hexo tag plugins. </p>
 <a id="more"></a>
@@ -118,10 +120,38 @@
 <h2 id="Text_Color">Text Color</h2>
 <p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
 <h3 id="Syntax">Syntax</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">{% textcolor [style] <span class="variable">%}</span></div><div class="line">  <span class="keyword">text</span> <span class="keyword">string</span></div><div class="line">{% endtextcolor <span class="variable">%}</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">{% textcolor [style] <span class="variable">%}</span></span>
+<span class="line">  <span class="keyword">text</span> <span class="keyword">string</span></span>
+<span class="line">{% endtextcolor <span class="variable">%}</span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Examples">Examples</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">{% textcolor muted <span class="variable">%}</span>Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.{% endtextcolor <span class="variable">%}</span></div><div class="line"></div><div class="line">{% textcolor primary <span class="variable">%}</span>Nullam id dolor id nibh ultricies vehicula ut id elit.{% endtextcolor <span class="variable">%}</span></div><div class="line"></div><div class="line">{% textcolor success <span class="variable">%}</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.{% endtextcolor <span class="variable">%}</span></div><div class="line"></div><div class="line">{% textcolor info <span class="variable">%}</span>Maecenas sed diam eget risus varius blandit sit amet non magna.{% endtextcolor <span class="variable">%}</span></div><div class="line"></div><div class="line">{% textcolor <span class="keyword">warning</span> <span class="variable">%}</span>Etiam porta sem malesuada magna mollis euismod.{% endtextcolor <span class="variable">%}</span></div><div class="line"></div><div class="line">{% textcolor danger <span class="variable">%}</span>Donec ullamcorper nulla non metus auctor fringilla.{% endtextcolor <span class="variable">%}</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+<span class="line">5</span>
+<span class="line">6</span>
+<span class="line">7</span>
+<span class="line">8</span>
+<span class="line">9</span>
+<span class="line">10</span>
+<span class="line">11</span>
+</pre></td><td class="code"><pre><span class="line">{% textcolor muted <span class="variable">%}</span>Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.{% endtextcolor <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% textcolor primary <span class="variable">%}</span>Nullam id dolor id nibh ultricies vehicula ut id elit.{% endtextcolor <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% textcolor success <span class="variable">%}</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.{% endtextcolor <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% textcolor info <span class="variable">%}</span>Maecenas sed diam eget risus varius blandit sit amet non magna.{% endtextcolor <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% textcolor <span class="keyword">warning</span> <span class="variable">%}</span>Etiam porta sem malesuada magna mollis euismod.{% endtextcolor <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% textcolor danger <span class="variable">%}</span>Donec ullamcorper nulla non metus auctor fringilla.{% endtextcolor <span class="variable">%}</span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Results">Results</h3>
 <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
@@ -139,10 +169,34 @@
 <h2 id="Buttons">Buttons</h2>
 <p>Inserts a button with target links, text and specified color.</p>
 <h3 id="Syntax-1">Syntax</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="xml"></span><span class="template_tag">{% btn <span class="keyword">url</span> text [style] %}</span><span class="xml"></span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template_tag">{% btn <span class="keyword">url</span> text [style] %}</span><span class="xml"></span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Examples-1">Examples</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">{% btn http:<span class="comment">//hahack.com hahack %}</span></div><div class="line"></div><div class="line">{% btn http:<span class="comment">//hahack.com hahack primary %}</span></div><div class="line"></div><div class="line">{% btn http:<span class="comment">//hahack.com hahack success %}</span></div><div class="line"></div><div class="line">{% btn http:<span class="comment">//hahack.com hahack warning %}</span></div><div class="line"></div><div class="line">{% btn http:<span class="comment">//hahack.com hahack danger %}</span></div><div class="line"></div><div class="line">{% btn http:<span class="comment">//hahack.com hahack info %}</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+<span class="line">5</span>
+<span class="line">6</span>
+<span class="line">7</span>
+<span class="line">8</span>
+<span class="line">9</span>
+<span class="line">10</span>
+<span class="line">11</span>
+</pre></td><td class="code"><pre><span class="line">{% btn http:<span class="comment">//hahack.com hahack %}</span></span>
+<span class="line"></span>
+<span class="line">{% btn http:<span class="comment">//hahack.com hahack primary %}</span></span>
+<span class="line"></span>
+<span class="line">{% btn http:<span class="comment">//hahack.com hahack success %}</span></span>
+<span class="line"></span>
+<span class="line">{% btn http:<span class="comment">//hahack.com hahack warning %}</span></span>
+<span class="line"></span>
+<span class="line">{% btn http:<span class="comment">//hahack.com hahack danger %}</span></span>
+<span class="line"></span>
+<span class="line">{% btn http:<span class="comment">//hahack.com hahack info %}</span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Results-1">Results</h3>
 <a class="btn btn-default" href="http://hahack.com" target="_blank" rel="external">hahack</a>
@@ -160,10 +214,34 @@
 <h2 id="Labels">Labels</h2>
 <p>Inserts a label with text and specified color.</p>
 <h3 id="Syntax-2">Syntax</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">{% label <span class="keyword">text</span> [style] <span class="variable">%}</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">{% label <span class="keyword">text</span> [style] <span class="variable">%}</span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Examples-2">Examples</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">{% label <span class="keyword">default</span> <span class="variable">%}</span></div><div class="line"></div><div class="line">{% label warinng <span class="keyword">warning</span> <span class="variable">%}</span></div><div class="line"></div><div class="line">{% label success success <span class="variable">%}</span></div><div class="line"></div><div class="line">{% label danger danger <span class="variable">%}</span></div><div class="line"></div><div class="line">{% label primary primary <span class="variable">%}</span></div><div class="line"></div><div class="line">{% label info info <span class="variable">%}</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+<span class="line">5</span>
+<span class="line">6</span>
+<span class="line">7</span>
+<span class="line">8</span>
+<span class="line">9</span>
+<span class="line">10</span>
+<span class="line">11</span>
+</pre></td><td class="code"><pre><span class="line">{% label <span class="keyword">default</span> <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% label warinng <span class="keyword">warning</span> <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% label success success <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% label danger danger <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% label primary primary <span class="variable">%}</span></span>
+<span class="line"></span>
+<span class="line">{% label info info <span class="variable">%}</span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Results-2">Results</h3>
 <span class="label label-default">default</span>
@@ -184,10 +262,14 @@
 </div>
 
 <h3 id="Syntax-3">Syntax</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">{% badge <span class="keyword">text</span> <span class="variable">%}</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line">{% badge <span class="keyword">text</span> <span class="variable">%}</span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Examples-3">Examples</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tuple">{<span class="comment">% badge 42 %}</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+</pre></td><td class="code"><pre><span class="line"><span class="tuple">{<span class="comment">% badge 42 %}</span></span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Results-3">Results</h3>
 <span class="badge">42</span>
@@ -195,10 +277,30 @@
 <h2 id="Alerts">Alerts</h2>
 <p>Inserts alert messages with text and specified color.</p>
 <h3 id="Syntax-4">Syntax</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">{% alert [style] <span class="variable">%}</span></div><div class="line">   Alert <span class="keyword">string</span></div><div class="line">{% endalert <span class="variable">%}</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">{% alert [style] <span class="variable">%}</span></span>
+<span class="line">   Alert <span class="keyword">string</span></span>
+<span class="line">{% endalert <span class="variable">%}</span></span>
+</pre></td></tr></table></figure>
 
 <h3 id="Examples-4">Examples</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">{<span class="var_expand">% alert warning %</span>}Best check yo self, you're <span class="literal">not</span> looking too good.{<span class="var_expand">% endalert %</span>}</div><div class="line"></div><div class="line">{<span class="var_expand">% alert danger %</span>}Change <span class="literal">a</span> few things up <span class="literal">and</span> try submitting again.{<span class="var_expand">% endalert %</span>}</div><div class="line"></div><div class="line">{<span class="var_expand">% alert success %</span>}You successfully read this important alert message.{<span class="var_expand">% endalert %</span>}</div><div class="line"></div><div class="line">{<span class="var_expand">% alert info %</span>}This alert needs your attention, but it's <span class="literal">not</span> super important.{<span class="var_expand">% endalert %</span>}</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+<span class="line">4</span>
+<span class="line">5</span>
+<span class="line">6</span>
+<span class="line">7</span>
+</pre></td><td class="code"><pre><span class="line">{<span class="var_expand">% alert warning %</span>}Best check yo self, you're <span class="literal">not</span> looking too good.{<span class="var_expand">% endalert %</span>}</span>
+<span class="line"></span>
+<span class="line">{<span class="var_expand">% alert danger %</span>}Change <span class="literal">a</span> few things up <span class="literal">and</span> try submitting again.{<span class="var_expand">% endalert %</span>}</span>
+<span class="line"></span>
+<span class="line">{<span class="var_expand">% alert success %</span>}You successfully read this important alert message.{<span class="var_expand">% endalert %</span>}</span>
+<span class="line"></span>
+<span class="line">{<span class="var_expand">% alert info %</span>}This alert needs your attention, but it's <span class="literal">not</span> super important.{<span class="var_expand">% endalert %</span>}</span>
+</pre></td></tr></table></figure>
 
 <h3 id="Results-4">Results</h3>
 <div class="alert alert-warning"><i class="fa fa-bell"></i>  <p>Best check yo self, you’re not looking too good.</p>
@@ -243,9 +345,9 @@
   <h2 class="title">Comments</h2>
 
   
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
+  	 <div id="disqus_thread">
+     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  	 </div>
   
 </section>
 
@@ -328,7 +430,6 @@
 
 <script type="text/javascript">
 var disqus_shortname = 'hexofm';
-
 (function(){
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
@@ -337,7 +438,6 @@ var disqus_shortname = 'hexofm';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
-
 
 
 <link rel="stylesheet" href="/hexo-theme-freemind/fancybox/jquery.fancybox.css" media="screen" type="text/css">
