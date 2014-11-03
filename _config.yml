@@ -1,4 +1,4 @@
-slogan: "Yet another bootstrap theme."
+slogan: "Stay Hungry! Stay Foolish! 博学、勤思、慎言、笃行！"
 
 menu:
   - title: Archives
@@ -19,16 +19,12 @@ menu:
     icon: "fa fa-user"
 
 links:
-  - title: Freemind
-    url: https://github.com/wzpan/freemind/
-    intro: "Freemind's Github repository."
-    icon: "fa fa-github"
   - title: "My Github"
-    url: http://www.github.com/wzpan
+    url: http://www.github.com/jeoygin
     intro: "My Github account."
     icon: "fa fa-github"
   - title: "My LinkedIn"
-    url: http://www.linkedin.com/pub/weizhou-pan/5b/8a0/161
+    url: https://www.linkedin.com/pub/ruijian-wang/36/19/561
     intro: "My Linkin account."
     icon: "fa fa-linkedin"
 
@@ -42,5 +38,7 @@ widgets:
 rss: 
 fancybox: true
 favicon: favicon.png
-duoshuo_shortname:
+duoshuo_shortname: jeoygin
 google_analytics:
+baidu_tongji: true
+
