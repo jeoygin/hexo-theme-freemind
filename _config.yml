@@ -37,7 +37,7 @@ widgets:
 
 rss: 
 fancybox: true
-favicon: favicon.png
+favicon: favicon.ico
 duoshuo_shortname: jeoygin
 google_analytics:
 baidu_tongji: true
