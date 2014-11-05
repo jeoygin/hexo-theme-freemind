@@ -13,6 +13,10 @@ menu:
     url: tags
     intro: "All the tags."
     icon: "fa fa-tags"
+  - title: Projects
+    url: projects
+    intro: "All the projects"
+    icon: "fa fa-folder"
   - title: About
     url: about
     intro: "About me."
