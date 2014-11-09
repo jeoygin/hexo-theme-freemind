@@ -9,13 +9,19 @@
 	  <a class="navbar-brand" href="<%- config.root %>"><%= config.title %></a>
       <div class="collapse navbar-collapse nav-menu">
 		<ul class="nav navbar-nav">
-		  <% theme.menu.forEach(function(m){ %>
+		  <% theme.menu.forEach(function(m){ if (m.url.substring(0, 4) == 'http'){ %>
+		  <li>
+			<a href="<%- m.url %>" title="<%- m.intro %>">
+			  <i class="<%- m.icon %>"></i><%- m.title %>
+			</a>
+		  </li>
+		  <% } else { %>
 		  <li>
 			<a href="<%- config.root %><%- m.url %>" title="<%- m.intro %>">
 			  <i class="<%- m.icon %>"></i><%- m.title %>
 			</a>
 		  </li>
-		  <% }) %>
+		  <% }}) %>
 		</ul>
       </div>
     </div> <!-- container -->

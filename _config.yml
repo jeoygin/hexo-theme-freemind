@@ -17,6 +17,10 @@ menu:
     url: projects
     intro: "All the projects"
     icon: "fa fa-folder"
+  - title: Knowledge
+    url: http://lib.jeoygin.org
+    intro: "Knowledge library"
+    icon: "fa fa-book"
   - title: About
     url: about
     intro: "About me."
